@@ -38,15 +38,14 @@
         button{
             background-color: var(--backgroundcolor);
             border: none;
-            font-size: vw;
-            border-radius: 1vw;
+            border-radius: 2vw;
             color: var(--fontcolor);
         }
         ul{
-            font-size: 2vw;
+            font-size: calc(10px + 1.5vw);
         }
         p{
-            font-size: 1.5vw;
+            font-size: calc(10px + 1.3vw);
         }
         #lightDark{
             width: 98vw;
@@ -65,18 +64,18 @@
         }
 
         #linsenpod{
-            font-size: 4vw;
+            font-size: calc(10px + 3.5vw);
             font-weight: 400;
             color: var(--linsenPodcolor);
         }
 
         #Curiosity{
-            font-size: 7vw;
+            font-size: calc(10px + 6vw);
         }
        
         #steeringSite{
             font-weight: bolder;
-            font-size: 3.5vw;
+            font-size: calc(10px + 3.5vw);
             padding: 2vw 4vw;
             animation: Shadow 3s ease-in-out infinite;
             transition: 200ms;
@@ -112,11 +111,14 @@
             transition: 200ms;
             color: var(--fontcolor);
             text-decoration: underline;
+            font-size: calc(13px + 0.7vw);
         }
         #githublink:hover{
             transform: scale(1.1);
         }
-
+        #copyright{
+            font-size: calc(10px + 0.5vw);
+        }
 
 
 ::-webkit-scrollbar {
@@ -189,7 +191,7 @@
                 <li>VS Code</li>
             </ul>
             <a href="https://github.com/linse2268/Linsenpod-Curiosity/" target="_blank"><h3 id="githublink">Unser Github Repository</h3></a>
-            <p>von Rémy Göttlich und Linus Bös im Rahmen des Informatik Unterrichtes bei Herrn Hagedorn 2024/2025</p>
+            <p id="copyright">von Rémy Göttlich und Linus Bös im Rahmen des Informatik Unterrichtes bei Herrn Hagedorn 2024/2025</p>
     </div>
 
     <script src="script.js"></script>
