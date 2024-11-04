@@ -47,15 +47,7 @@
         p{
             font-size: calc(10px + 1.3vw);
         }
-        #lightDark{
-            width: 98vw;
-            display: flex;
-            justify-content: end;
-        }
-        #lightDark, button{
-            font-size: calc(10px + 1vw);
-            padding: 0.5vw 1vw;
-        }
+        
 
         #banner{
             display: flex;
@@ -73,23 +65,11 @@
             font-size: calc(10px + 6vw);
         }
        
-        #steeringSite{
-            font-weight: bolder;
-            font-size: calc(10px + 3.5vw);
-            padding: 2vw 4vw;
-            animation: Shadow 3s ease-in-out infinite;
-            transition: 200ms;
-            
-        }
-        #steeringSite:hover{
-            background-color: var(--backgroundcolorHover);
-        }
-
-        @keyframes Shadow{
-            0%{box-shadow: 0 0 4vw rgba(0, 0, 0, 0.5);}
-            50%{box-shadow:  0 0 4vw rgba(0, 0, 0, 1); transform: scale(1.05);}
-            100%{box-shadow: 0 0 4vw rgba(0, 0, 0, 0.5);}
-        }
+       #ausprobieren{
+           padding: 2vw 3vw;
+           background-color: var(--backgroundcolor);
+           border-radius: calc(10px + 1.5vw);
+       }
 
         #info{
             margin-top: 5vw;
@@ -147,12 +127,11 @@
     </style>
 </head>
 <body id="body">
-    <div id="lightDark"><button id="lightDarkButton" onclick="lightDark()">switch to lightmode</button></div>
     
     <div id="banner">
         <h3 id="linsenpod">LinsenPod</h3><h1 id="Curiosity">Curiosity</h1>
     </div>
-    <h1>Probier mich aus in Raum 2.19</h1>
+    <h1 id="ausprobieren" >Probier mich aus in Raum 2.19</h1>
 
     <div id="info">
         
