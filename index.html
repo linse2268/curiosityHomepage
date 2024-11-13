@@ -61,6 +61,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 30vh;
       }
 
       #linsenpod {
@@ -139,9 +140,9 @@
     <div id="banner">
       <img src="https://squidpod.github.io/images/pics/final_dark.png" />
       <h3 id="linsenpod">LinsenPod</h3>
-      <h1 id="Curiosity">Curiosity</h1>
+      <h1 id="Curiosity"></h1>
     </div>
-    <a href="https://linse2268.github.io/neueHandySteuerung/">
+    <a href="/drivepanel">
       <h1 id="ausprobieren">Hier gehts zu Steuerung</h1>
     </a>
 
@@ -180,6 +181,24 @@
       </p>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+      const curiosity = document.getElementById("Curiosity");
+      const name = "Curiosity";
+      let namePart = "";
+      let x = 0;
+
+      const inteval = setInterval(() => {
+        namePart = namePart + name[x];
+        curiosity.innerText = namePart;
+        x++;
+        if (x == 9) {
+          stopInterval();
+        }
+      }, 300);
+
+      function stopInterval() {
+        clearInterval(inteval);
+      }
+    </script>
   </body>
 </html>
