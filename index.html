@@ -1,192 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>ESS Curiosity</title>
     <link
       rel="icon"
       href="https://squidpod.github.io/images/pics/final_light.png"
     />
     <style>
-        :root{
-            --backgroundcolor: rgb(53, 53, 53);
-            --fontcolor: rgb(185, 185, 185);
-            --bodybackgroundcolor: rgb(29, 29, 29);
-            --linsenPodcolor: rgb(150, 150, 150);
-            --backgroundcolorHover: rgb(66, 66, 66);
-        }
-        *{
-            font-family: "Fredoka", sans-serif;
-            
-            
-            
-        }
+      :root {
+        --backgroundcolor: rgb(53, 53, 53);
+        --fontcolor: rgb(185, 185, 185);
+        --bodybackgroundcolor: rgb(29, 29, 29);
+        --linsenPodcolor: rgb(150, 150, 150);
+        --backgroundcolorHover: rgb(66, 66, 66);
+      }
+      * {
+        font-family: "Fredoka", sans-serif;
+      }
 
-        body{
-            overflow-x: hidden;
-            padding: 2vw;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: var(--fontcolor);
-            background-color: var(--bodybackgroundcolor);
-        }
-        h1{
-            font-size: 3.5vw;
-        }
+      body {
+        overflow-x: hidden;
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--fontcolor);
+        background-color: var(--bodybackgroundcolor);
+      }
+      h1 {
+        font-size: 3.5vw;
+      }
 
-        button{
-            background-color: var(--backgroundcolor);
-            border: none;
-            border-radius: calc(10px + 1.5vw);
-            color: var(--fontcolor);
-        }
-        ul{
-            font-size: calc(10px + 1.5vw);
-        }
-        p{
-            font-size: calc(10px + 1.3vw);
-        }
-        img{
-            width: 7vw;
-            aspect-ratio: 1/1;
-            padding-right: 1vw;
-        }
+      button {
+        background-color: var(--backgroundcolor);
+        border: none;
+        border-radius: calc(10px + 1.5vw);
+        color: var(--fontcolor);
+      }
+      ul {
+        font-size: calc(10px + 1.5vw);
+      }
+      p {
+        font-size: calc(10px + 1.3vw);
+      }
+      img {
+        width: 7vw;
+        aspect-ratio: 1/1;
+        padding-right: 1vw;
+      }
 
-        #banner{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      #banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-        #linsenpod{
-            font-size: calc(10px + 3.5vw);
-            font-weight: 400;
-            color: var(--linsenPodcolor);
-        }
+      #linsenpod {
+        font-size: calc(10px + 3.5vw);
+        font-weight: 400;
+        color: var(--linsenPodcolor);
+      }
 
-        #Curiosity{
-            font-size: calc(10px + 6vw);
-        }
-       
-       #ausprobieren{
-           padding: 2vw 3vw;
-           background-color: var(--backgroundcolor);
-           border-radius: calc(10px + 1.5vw);
-           box-shadow: 0 0 4vw black;
-           color: var(--fontcolor);
-           text-decoration: none;
-       }
+      #Curiosity {
+        font-size: calc(10px + 6vw);
+      }
 
-        #info{
-            margin-top: 5vw;
-            width: 80vw;
-            background-color: var(--backgroundcolor);
-            border-radius: calc(10px + 1.5vw);
-            padding: 2vw 3vw;
-            padding-bottom: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 0 0 4vw black;
-        }
-        
-        #idee{
-            margin: 0;
-            padding: 0;
-        }
-        #githublink{
-            transition: 200ms;
-            color: var(--fontcolor);
-            text-decoration: underline;
-            font-size: calc(13px + 0.7vw);
-        }
-        #githublink:hover{
-            transform: scale(1.1);
-        }
-        #copyright{
-            font-size: calc(10px + 0.5vw);
-            text-align: center;
-        }
+      #ausprobieren {
+        padding: 2vw 3vw;
+        background-color: var(--backgroundcolor);
+        border-radius: calc(10px + 1.5vw);
+        box-shadow: 0 0 4vw black;
+        color: var(--fontcolor);
+      }
+      a {
+        text-decoration: none;
+      }
 
+      #info {
+        margin-top: 5vw;
+        width: 60vw;
+        background-color: var(--backgroundcolor);
+        border-radius: calc(10px + 1.5vw);
+        padding: 2vw 3vw;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0 4vw black;
+      }
 
-::-webkit-scrollbar {
-    width: 12px; 
-    height: 12px; 
-}
+      #idee {
+        margin: 0;
+        padding: 0;
+      }
+      #githublink {
+        transition: 200ms;
+        color: var(--fontcolor);
+        text-decoration: underline;
+        font-size: calc(13px + 0.7vw);
+      }
+      #githublink:hover {
+        transform: scale(1.1);
+      }
+      #copyright {
+        font-size: calc(10px + 0.5vw);
+        text-align: center;
+      }
 
+      ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+      }
 
-::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 10px;
-}
+      ::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 10px;
+      }
 
+      ::-webkit-scrollbar-thumb {
+        background-color: var(--backgroundcolor);
+        border-radius: 10px;
+      }
 
-::-webkit-scrollbar-thumb {
-    background-color: var(--backgroundcolor); 
-    border-radius: 10px;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+      }
     </style>
-</head>
-<body id="body">
-    
+  </head>
+  <body id="body">
     <div id="banner">
-        <img src="https://squidpod.github.io/images/pics/final_dark.png">
-        <h3 id="linsenpod">LinsenPod</h3><h1 id="Curiosity">Curiosity</h1>
+      <img src="https://squidpod.github.io/images/pics/final_dark.png" />
+      <h3 id="linsenpod">LinsenPod</h3>
+      <h1 id="Curiosity">Curiosity</h1>
     </div>
-    <a href="https://linse2268.github.io/neueHandySteuerung/">    <h1 id="ausprobieren" >Hier gehts zu Steuerung</h1>
-</a>
+    <a href="https://linse2268.github.io/neueHandySteuerung/">
+      <h1 id="ausprobieren">Hier gehts zu Steuerung</h1>
+    </a>
 
     <div id="info">
-        
-            <h1>Unsere Idee:</h1>
-            <div id="idee">
-                <p>Curiosity ist ein Auto, das über eine Website gesteuert wird, auf der ein Livebild von einer Handykamera zu sehen ist, die sich auf dem Auto befindet. Die Website läuft auf einem ESP 8266 Mikrokontroller, der über WLAN mit einem Browser verbunden werden kann. So kann man das Auto überall dort fahren, wo das Auto dasselbe WLAN wie der Browser hat. Der Fahrer kann jedoch bequem an einem Platz bleiben.</p>
+      <h1>Unsere Idee:</h1>
+      <div id="idee">
+        <p>
+          Curiosity ist ein Auto, das über eine Website gesteuert wird, auf der
+          ein Livebild von einer Handykamera zu sehen ist, die sich auf dem Auto
+          befindet. Die Website läuft auf einem ESP 8266 Mikrokontroller, der
+          über WLAN mit einem Browser verbunden werden kann. So kann man das
+          Auto überall dort fahren, wo das Auto dasselbe WLAN wie der Browser
+          hat. Der Fahrer kann jedoch bequem an einem Platz bleiben.
+        </p>
+      </div>
 
-                <!--
-                <p>Weitere Features, wie eine Hinderniserkennung durch einen Ultraschallsensor, der kontinuierlich den Abstand zu Objekten vor sich misst, machen das Fahrerlebnis komfortabler. Außerdem verfügt das Auto über einen Lautsprecher und Lichter, um im Weg stehende Personen auf sich aufmerksam zu machen.</p>
-                -->
-            </div>
-        
-        
-            <!--
-            <h1>Materialien:</h1>
-            <ul>
-                <li>ESP 8266</li>
-                <li>Arudino Uno</li>
-                <li>Lego Technic</li>
-                <li>Handy</li>
-                
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            -->
-
-            <h1>Tech-Stack:</h1>
-            <ul>
-                <li>C++</li>
-                <li>Html</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Notion Teamspace</li>
-                <li>Github</li>
-                <li>Arduino IDE</li>
-                <li>VS Code</li>
-            </ul>
-            <a href="https://github.com/linse2268/Linsenpod-Curiosity/" target="_blank"><h3 id="githublink">Unser Github Repository</h3></a>
-            <p id="copyright">von Rémy Göttlich und Linus Bös im Rahmen des Informatik Unterrichtes bei Herrn Hagedorn 2024/2025</p>
+      <h1>Tech-Stack:</h1>
+      <ul>
+        <li>C++</li>
+        <li>Html</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Notion Teamspace</li>
+        <li>Github</li>
+        <li>Arduino IDE</li>
+        <li>VS Code</li>
+      </ul>
+      <a
+        href="https://github.com/linse2268/Linsenpod-Curiosity/"
+        target="_blank"
+        ><h3 id="githublink">Unser Github Repository</h3></a
+      >
+      <p id="copyright">
+        von Rémy Göttlich und Linus Bös im Rahmen des Informatik Unterrichtes
+        bei Herrn Hagedorn 2024/2025
+      </p>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
